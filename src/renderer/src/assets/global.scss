@@ -1,0 +1,21 @@
+body {
+}
+//使用 css 拖动窗口
+.drag {
+  -webkit-app-region: drag;
+}
+
+.no-drag,
+input,
+textarea,
+button,
+select,
+option,
+a {
+  -webkit-app-region: no-drag;
+}
+
+input {
+  caret-color: gray;
+  caret-shape: block;
+}
