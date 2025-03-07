@@ -9,9 +9,11 @@ function App(): JSX.Element {
   const [searchTerm, setSearchTerm] = useState('')
 
   return (
-    <div className="flex flex-col min-h-fit">
+    <div className="h-screen flex flex-col">
       <CodeContext.Provider value={{ data, setData, searchTerm, setSearchTerm }}>
-        <Search />
+        <div className="flex-none">
+          <Search />
+        </div>
         {data.length > 0 && (
           <div className="overflow-y-auto -mt-[10px] bg-gray-200 rounded-b-xl">
             <Result />
